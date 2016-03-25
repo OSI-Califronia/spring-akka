@@ -1,19 +1,19 @@
 package main;
-import java.util.logging.Level;
 
-import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Created by OSI on 25.03.2016.
  */
-@Log
+@Slf4j
 public class Main {
 
 	private void testerino() {
-		log.log(Level.INFO, "Starting the app");
+		log.info("Starting the app");
 	}
 	
     public final static void main(String[] args) {
-        
+        Main main = new Main();
+		main.testerino();
     }
 }
